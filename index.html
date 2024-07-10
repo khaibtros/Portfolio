@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/0369e595c1.js" crossorigin="anonymous"></script>
+		<title>Web Dev</title>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<a href="#" class="logo">Moonlight</a>
+					<ul id="sidemenu">
+						<li><a href="#header" class="active-link">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<!--<div class="header-text">
+					<h1>Hi, <span class="first-span">Welcome</span> to<br> my <span class="second-span">website</span>!</h1>
+				</div>-->
+			</div>
+			<section>
+				<img src="img_portfolio/stars.png" id="stars">
+				<img src="img_portfolio/moon.png" id="moon">
+				<img src="img_portfolio/mountains_behind.png" id="mountains_behind">	
+				<h2 id="text">Moon Light</h2>
+				<a href="#about" id="button">Explore</a>
+				<img src="img_portfolio/mountains_front.png" id="mountains_front">
+			</section>
+		</div>  
+		
+	<!-------------------------About--------------------------->	
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="img_portfolio/user.png">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>UI/UX</span><br>Web UX/UI Development</li>
+								<li><span>Yo</span><br>Deep Work</li>
+								<li><span>Web Development</span><br>Researching</li>
+								<li><span>App Development</span><br>Tell internet jokes</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2021 - Current</span><br>Worker At A Brick Company</li>
+								<li><span>2019 - 2021</span><br>Became A Millionaire At The Age Of 18</li>
+								<li><span>2017 - 2019</span><br>Chasing Crypto Pumps</li>
+								<li><span>2016 - 2017</span><br>English Teacher</li>
+								<li><span>2016 - 2017</span><br>Make More Than 100 Girls Like Me For No Reason</li>
+								<li><span>2019</span><br>Juice WRLD Unreleased Songs Leaker</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2016</span><br>3rd place in the English contest at city level</li>
+								<li><span>2016</span><br>IELTS 8.0</li>
+								<li><span>2014</span><br>Having said that, I still hate school</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<!--------------------------Services------------------------------>	
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title">My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+						<a href="#">learn more</a>
+					</div>	
+					<div>
+						<i class="fa-solid fa-crop"></i>
+						<h2>UI/UX Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+						<a href="#">learn more</a>
+					</div>
+					<div>
+						<i class="fa-brands fa-app-store"></i>
+						<h2>App Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+						<a href="#">learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--------------------Porfolio-------------------->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="img_portfolio/work-1.png">
+						<div class="layer">
+							<h3>Social Media App</h3>
+							<p>The app connects you to the talented people around the world. Download it from playstore.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="img_portfolio/work-2.png">
+						<div class="layer">
+							<h3>Music App</h3>
+							<p>The app connects you to the talented people around the world. Download it from playstore.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="img_portfolio/work-3.png">
+						<div class="layer">
+							<h3>Online Shopping App</h3>
+							<p>The app connects you to the talented people around the world. Download it from playstore.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn">See more</a>
+			</div>
+		</div>
+	<!--------------------contact----------------------->
+		<div id="contact"></div>
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-paper-plane"></i> trankhai15052005@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i> 0963676693</p>
+						<div class="social-icons">
+							<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+						<a href="img_portfolio/my-cv.pdf" download class="btn btn2">Download CV</a>
+					</div>
+					<div class="contact-right">
+						<form method="POST" action="https://api.sheetmonkey.io/form/i8wDgcnapgtqy6UdUJ65MT">
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="email" name="Email" placeholder="Your Email" required>
+							<textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+							<button type="submit" class="btn btn2" onclick="submit()">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>Made by Khai with <i class="fa-solid fa-heart"></i></p>
+				</div>
+			</div>
+
+		<script src="transition_active-tab.js"></script>
+		<script src="side_menu.js"></script>
+		<script src="parallax_effect.js"></script>
+	</body>
+</html>
